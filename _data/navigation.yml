@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: Curriculum
+  url: /cv/
+
+- title: Research
+  url: /research/
+
+- title: Publications
+  url: /publications/
+
+- title: Blog
+  url: /blog/

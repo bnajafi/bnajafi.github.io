@@ -1,0 +1,129 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+<style>
+  .bottom-three {
+     margin-bottom: 1.5cm;
+   }
+  .bottom-small {
+     margin-bottom: 1cm;
+   }
+</style>
+</head>
+
+<body class="page">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article class="page">
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+
+    <!-- Studies -->
+    <div class="bottom-three">
+      <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/study2.png" alt="Education" width="70" height="70"></p>
+      <!-- PhD -->
+      <p align="center" >&#8226 I recently submitted my
+      <strong>Ph.D.</strong> (2012-2016) in <a href="http://www.uu.nl/en/organisation/faculty-of-social-and-behavioural-sciences/about-the-faculty/departments/cultural-anthropology" target="_blank">Cultural Anthropology</a>,
+      supervised by Prof. dr. Ton Robben and Dr. Martijn Oosterbaan at <a href="http://www.uu.nl/en" targer="_blank">Utrecht University</a>.
+      </p>
+      <!-- M.A. -->
+      <p align="center">&#8226 <strong>Magistra Artium</strong> (2005-2010) in Cultural Anthropology
+      supervised by Prof. Bo Sax from the 
+      <a href="http://www.uni-heidelberg.de/index_e.html" target="_blank"> University of Heidelberg</a>.</p>
+      <!-- year abroad -->
+      <p align="center">&#8226 I studied a <strong>year abroad</strong> (2008-2009) at the 
+      <a href="http://new.huji.ac.il/en" target="_blank"> Hebrew University of Jerusalem</a> in Israel.
+      </p>
+      <!-- vetmed -->
+      <p align="center">&#8226 For two years I studied <strong>Veterinary Medicine</strong> (2003-2005) at the 
+      <a href="http://www.vetmeduni.ac.at/" target="_blank"> Veterinary University of Vienna</a>.
+      </p>
+    </div>
+
+    <!-- Work -->
+    <div align="center" class="bottom-three">
+      <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/business.png" alt="Work Experience" width="70" height="70"></p>
+
+      <!-- Bonn -->
+      <p align="center" >&#8226 In October 2016 I'll start working as a <strong>postdoctoral researcher</strong> at the Geography Department
+        of the University of Bonn, in the research group of Prof. Julia Verne.
+      </p>
+      <!-- UvA -->
+      <p align="center" >&#8226 I worked as a <strong>digital anthropologist</strong> in the ChemicalYouth group at the Anthropology Deparment
+        of the University of Amsterdam from 2015 to 2016. </p>
+      <!-- interning -->
+      <p align="center" >&#8226 Between 2011 and 2013, I worked as an <strong>intern and graduate research assistant</strong>: 
+        in trend research at GIM market research Heidelberg, in innovation research and foresight at the 
+        Fraunhofer Institute for System- and Innovation Research, and at the Institute for Innovation Studies, Utrecht University.
+      </p>
+    </div>
+
+    <!-- Computer Skills -->
+    <div align="center" class="bottom-three">
+      <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/computer2.png" alt="Computer Skills" width="80" height="80"></p>
+      <!-- Digital Methods -->
+      <p align="center" >&#8226 For social media analyses, I regularly work with 
+        <a href="https://wiki.digitalmethods.net/Dmi/ToolDatabase" target="_blank">DMI tools</a> such as <strong>Netvizz</strong>, and with
+      <strong>Gephi</strong> for network analyses.
+      </p>
+      <!-- python -->
+      <p align="center" >&#8226 I use <strong>Python</strong> for data collection and scraping (BeautifulSoup, Pattern),
+      for automated text analyses (Pattern, NLTK), and for building networks (networkx) and simple graphs (matplotlib).
+      </p>
+      
+    </div>
+    
+    <!-- Languages -->
+    <div align="center" class="bottom-three">
+      <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/talk.png" alt="Languages" width="70" height="70"></p>
+      <p align="center" >&#8226 <strong>German</strong> is my mother tongue.</p>
+      <p align="center" >&#8226 My <strong>English</strong> and <strong>Hebrew</strong> are almost as fluent.</p>
+      <p align="center" >&#8226 My <strong>Dutch, French, and Italian</strong> can be put to some use.</p>
+      
+    </div>
+    
+    {{ content }}
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}          
+
+</body>
+</html>
