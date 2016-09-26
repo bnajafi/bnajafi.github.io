@@ -1,13 +1,21 @@
 ---
 layout: home
-excerpt: "Lisa's Personal Website"
+excerpt: "Behzad's Personal Website"
 title: "About me"
-tags: [Academic website, research, digital anthropology, lisa jenny krieg]
+tags: [Academic website, research, Energy Data Science, Behzad Najafi]
 image:
   feature: headerlisa1.jpg
   credit: 
   creditlink: 
 ---
+
+I'm an adjunct Professor in the Energy Department of Politecnico di Milano. My research activites have been focused on different applications of 
+data science in energy and utilities sector including data-driven diagnosis and prognosis of power generation units, data-driven building
+simulation,smart homes and data-driven fault detection in smart grids.
+
+I am offering a master of science course entitled as Energy and Environmental Technologies for building systems in the framework of Energy Engineering 
+program of Politecnico di Milano. The course is focused on physical concepts behind building simulation, physical absed simulation and data-driven methods for 
+building simulation.
 
 I'm an anthropologist currently located in Amsterdam, The Netherlands. I'm interested in digital anthropology, computational methods,
 and human-technology-animal-environment relations. When I'm not thinking or writing, I can probably be found 
