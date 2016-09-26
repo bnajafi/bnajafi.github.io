@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Behzad Najafi
+title:            Lisa Jenny Krieg
 locale:           en_US
-url:              bnajafi.github.io
+url:              #lisajennykrieg.github.io
 
 
 # Jekyll configuration
@@ -50,28 +50,28 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Behzad Najafi
-  avatar: behzad.jpg
-  bio: "Data for Energy!"
-  email: behzad.najafi@polimi.it
+  name: Lisa Jenny Krieg
+  avatar: lisa.jpg
+  bio: "I'm researching people, animals, chemicals, and technology; raising a daughter; and playing with rocks, dogs, and books"
+  email: l.j.krieg@uva.nl
   disqus-shortname: 
-  twitter: bnajafi
-  research-gate: Behzad_Najafi2
+  twitter: liza_jenn
+  research-gate: Lisa_Krieg
   mendeley: 
   facebook: #username
   google:
-    scholar: 2fFI1FIAAAAJ
+    scholar: LC0HHdIAAAAJ
     plus: #username
     analytics: 
     verify:
     ad-client:
     ad-slot:
-  github: bnajafi
+  github: lisajennykrieg
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: behzadnajafi
+  linkedin: lisa-krieg-1131a3a5
   flickr: #username
 
-timezone: Europe/Rome
+timezone: Europe/Amsterdam
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
