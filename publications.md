@@ -8,7 +8,7 @@ comments: false
 share: false
 ---
 
-### Peer-reviewed publications
+### Refereed Journal Papers
 
 1)	Behzad Najafi, Alireza Haghighat Mamaghani, Fabio Rinaldi, Andrea Casalegno, Long-term performance analysis of an HT-PEM fuel cell based micro-CHP system: Operational strategies, Applied Energy 147, 2015, pp 582-592
 
